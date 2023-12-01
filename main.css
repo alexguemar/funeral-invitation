@@ -101,3 +101,10 @@ img {
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 765px) {
+  .home,
+  .content {
+    margin-top: -3rem;
+  }
+}
