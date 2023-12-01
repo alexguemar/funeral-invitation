@@ -22,10 +22,6 @@ body {
   line-height: 1.5;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 img {
   max-width: 100%;
 }
@@ -94,10 +90,6 @@ img {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
-}
-
-audio {
-  display: none;
 }
 
 @keyframes animation-content {
