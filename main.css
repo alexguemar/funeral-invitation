@@ -18,9 +18,9 @@ body {
   background-color: var(--white);
   color: var(--black);
   line-height: 1.5;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
@@ -82,12 +82,9 @@ img {
 }
 
 .content-text {
+  margin-bottom: 0.5rem;
   font-size: 1.75rem;
   letter-spacing: 0.5px;
-}
-
-.content-border img {
-  margin: 1rem 0;
 }
 
 .content-date {
