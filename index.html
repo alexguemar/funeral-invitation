@@ -58,16 +58,18 @@
       </div>
     </div>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      window.onload = function () {
         var audio = document.getElementById("backgroundMusic");
+
         audio.addEventListener("loadeddata", function () {
           audio.play();
         });
+
         setTimeout(function () {
           document.getElementById("container1").classList.add("hidden");
           document.getElementById("container2").classList.remove("hidden");
         }, 4000);
-      });
+      };
     </script>
   </body>
 </html>
