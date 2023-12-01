@@ -23,6 +23,10 @@ body {
   line-height: 1.5;
 }
 
+body * {
+  outline: 1px solid red;
+}
+
 img {
   max-width: 100%;
 }
