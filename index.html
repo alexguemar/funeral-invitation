@@ -74,16 +74,17 @@
     </button>
 
     <script>
-      function playAudio() {
-        var audio = document.getElementById("backgroundMusic");
-        audio.play();
-      }
-      playAudio();
-
-      setTimeout(function () {
-        document.getElementById("container1").classList.add("hidden");
-        document.getElementById("container2").classList.remove("hidden");
-      }, 4000);
+      window.addEventListener("load", function () {
+        function playAudio() {
+          var audio = document.getElementById("backgroundMusic");
+          audio.play();
+        }
+        playAudio();
+        setTimeout(function () {
+          document.getElementById("container1").classList.add("hidden");
+          document.getElementById("container2").classList.remove("hidden");
+        }, 4000);
+      });
     </script>
   </body>
 </html>
