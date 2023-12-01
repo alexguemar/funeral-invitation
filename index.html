@@ -68,13 +68,15 @@
         var audio = document.getElementById("backgroundMusic");
 
         audio.addEventListener("loadeddata", function () {
+          // Reproducir el audio una vez que esté cargado
           audio.play();
-        });
 
-        setTimeout(function () {
-          document.getElementById("container1").classList.add("hidden");
-          document.getElementById("container2").classList.remove("hidden");
-        }, 4000);
+          // Ocultar container1 y mostrar container2 después de 4 segundos
+          setTimeout(function () {
+            document.getElementById("container1").classList.add("hidden");
+            document.getElementById("container2").classList.remove("hidden");
+          }, 4000);
+        });
       };
     </script>
   </body>
