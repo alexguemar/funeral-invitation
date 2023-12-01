@@ -55,21 +55,40 @@
     <audio id="backgroundMusic" loop preload="auto" autoplay>
       <source src="./audio-funeral.mp3" type="audio/mp3" />
       <source src="./audio-funeral.ogg" type="audio/ogg" />
+      <source src="./audio-funeral.wav" type="audio/wav" />
       Tu navegador no soporta la etiqueta de audio.
     </audio>
+    <button onclick="playAudio()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+          fill="#f5f5f5"
+        />
+      </svg>
+    </button>
+
     <script>
-      window.onload = function () {
+      function playAudio() {
         var audio = document.getElementById("backgroundMusic");
-
-        audio.addEventListener("loadeddata", function () {
-          audio.play();
-        });
-
+        audio.play();
+        document.getElementById("mensaje").style.display = "block";
         setTimeout(function () {
-          document.getElementById("container1").classList.add("hidden");
-          document.getElementById("container2").classList.remove("hidden");
-        }, 4000);
-      };
+          document.getElementById("mensaje").style.display = "none";
+        }, 2000);
+      }
+
+      playAudio();
+
+      setTimeout(function () {
+        document.getElementById("container1").classList.add("hidden");
+        document.getElementById("container2").classList.remove("hidden");
+      }, 4000);
     </script>
   </body>
 </html>
