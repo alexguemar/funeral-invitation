@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invitación Misa | Angélica Baldeón Galarza</title>
+    <title>Invitación Misa | Sábado 16 de diciembre del 2023</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
@@ -52,31 +52,23 @@
         </p>
       </div>
     </div>
-    <audio
-      id="backgroundMusic"
-      preload="auto"
-      loop
-      autoplay=""
-      playsinline=""
-      webkit-playsinline=""
-      x5-playsinline=""
-    >
+    <audio id="backgroundMusic" loop preload="auto" autoplay>
       <source src="./audio-funeral.mp3" type="audio/mp3" />
+      <source src="./audio-funeral.ogg" type="audio/ogg" />
+      Tu navegador no soporta la etiqueta de audio.
     </audio>
     <script>
       window.onload = function () {
         var audio = document.getElementById("backgroundMusic");
 
         audio.addEventListener("loadeddata", function () {
-          // Reproducir el audio una vez que esté cargado
           audio.play();
-
-          // Ocultar container1 y mostrar container2 después de 4 segundos
-          setTimeout(function () {
-            document.getElementById("container1").classList.add("hidden");
-            document.getElementById("container2").classList.remove("hidden");
-          }, 4000);
         });
+
+        setTimeout(function () {
+          document.getElementById("container1").classList.add("hidden");
+          document.getElementById("container2").classList.remove("hidden");
+        }, 4000);
       };
     </script>
   </body>
