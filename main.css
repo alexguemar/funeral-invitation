@@ -69,6 +69,17 @@ img {
   height: 320px;
 }
 
+.home-content p {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-size: 3.2rem !important;
+  line-height: 1;
+}
+
 .content-image {
   width: 175px;
   height: 175px;
